@@ -1,0 +1,46 @@
+IDGS@DESKTOP-VQID9RJ MINGW64 ~/workspace/miweb (master)
+$ git marge ramab
+git: 'marge' is not a git command. See 'git --help'.
+
+The most similar command is
+        merge
+
+IDGS@DESKTOP-VQID9RJ MINGW64 ~/workspace/miweb (master)
+$ git merge ramab
+Updating 63deeb6..4d8c662
+Fast-forward
+ archivo2.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+IDGS@DESKTOP-VQID9RJ MINGW64 ~/workspace/miweb (master)
+$ cat archivo2.txt
+otra vez
+otrohola
+IDGS@DESKTOP-VQID9RJ MINGW64 ~/workspace/miweb (master)
+$ git remote add origin https://github.com/Miryam0234/miweb.git
+
+IDGS@DESKTOP-VQID9RJ MINGW64 ~/workspace/miweb (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Miryam0234/miweb.git'
+
+IDGS@DESKTOP-VQID9RJ MINGW64 ~/workspace/miweb (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Miryam0234/miweb.git'
+
+IDGS@DESKTOP-VQID9RJ MINGW64 ~/workspace/miweb (master)
+$ git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 22, done.
+Counting objects: 100% (22/22), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (22/22), 1.90 KiB | 486.00 KiB/s, done.
+Total 22 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/Miryam0234/miweb.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+IDGS@DESKTOP-VQID9RJ MINGW64 ~/workspace/miweb (master)
